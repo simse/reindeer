@@ -1,0 +1,15 @@
+{{define "services"}}
+{{range .Categories}}
+    <div class="services">
+        <h2>{{.Name}}</h2>
+
+        {{range .Services}}
+        <div class="service {{.CssClass}}">
+            <p>{{.Name}}</p>
+
+            <p class="status {{.CssClass}}">{{.Status}}</p>
+        </div>
+        {{end}}
+    </div>
+{{end}}
+{{end}}

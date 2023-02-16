@@ -1,0 +1,102 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font: 100%/1.5 "Inter", "Inter UI", BlinkMacSystemFont, -apple-system, "San Francisco Text", "Roboto", "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 0 2rem;
+  background: #111;
+  color: #fff;
+}
+
+main {
+  min-height: 100vh;
+  padding: 4rem 0;
+  margin: 0 auto;
+  max-width: 640px;
+}
+
+.title {
+  font-weight: 400;
+}
+
+.statusBanner {
+  margin: 16px 0;
+}
+
+.services {
+  margin: 32px 0 0 0;
+  padding-bottom: 16px;
+}
+
+.services h2 {
+  font-weight: 400;
+  font-size: 1.25rem;
+}
+
+.banner {
+  padding: 16px 16px;
+  display: flex;
+  justify-content: space-between;
+  background: #333;
+}
+
+.banner.ok {
+  background: #008000;
+}
+
+.banner.warn {
+  background: #cc4400;
+}
+
+.banner.error {
+  background: #e60000;
+}
+
+.banner p {
+  margin: 0;
+  font-size: 1.1em;
+}
+
+.banner p:first-child {
+  font-weight: 700;
+}
+
+.service {
+  padding: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-bottom: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.service:last-child {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.service p {
+  margin: 0;
+}
+
+.service p.status.ok {
+  color: #7fff7f;
+}
+
+.service p.status.warn {
+  color: #ffde7f;
+}
+
+.service p.status.error {
+  color: #ff8181;
+}
